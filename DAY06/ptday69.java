@@ -1,0 +1,24 @@
+package praticeday5iot;
+
+public class ptday69 {
+
+
+		    public static void main(String[] args) {
+
+		        int[] marks = {10, 20, 30, 40, 50};
+
+		        int[] prefixSum = new int[marks.length];
+
+		        prefixSum[0] = marks[0];
+
+		        for (int i = 1; i < marks.length; i++) {
+		            prefixSum[i] = prefixSum[i - 1] + marks[i];
+		        }
+
+		        int sum = prefixSum[3] - prefixSum[0];
+
+		        System.out.println("Total Marks: " + sum);
+		    }
+		}
+		// TODO Auto-generated method stub
+
